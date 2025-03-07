@@ -1,5 +1,5 @@
 // src/app/projects/[slug]/page.tsx
-import { getProjectById } from "@/lib/data";
+import { getProjectById, getProjects } from "@/lib/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -7,7 +7,21 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+type Props = {
+    params: {
+        slug: string;
+    };
+};
+
+// Add generateStaticParams to generate static paths at build time
+export function generateStaticParams() {
+    const projects = getProjects();
+    return projects.map((project) => ({
+        slug: project.id,
+    }));
+}
+
+export default function ProjectPage({ params }: Props) {
     const project = getProjectById(params.slug);
 
     if (!project) {

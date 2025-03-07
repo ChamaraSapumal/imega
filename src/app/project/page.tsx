@@ -5,9 +5,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getProjects } from "@/lib/data";
+import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+
 
 export default function ProjectsPage() {
     const allProjects = getProjects();

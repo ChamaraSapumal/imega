@@ -22,14 +22,14 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center mb-16">
                 <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white mb-8">
                     <Image
-                        src="/images/profile.jpg"
+                        src="/imega/images/profile.jpg"
                         alt="Designer portrait"
                         fill
                         className="object-cover"
                     />
                 </div>
 
-                <h2 className="text-2xl tracking-tight mb-2">ABOUT <span className="font-bold">ME</span></h2>
+                <h2 className="text-2xl tracking-tight mb-2">ABOUT <span className="font-bold text-orange-500">ME</span></h2>
 
                 <div className="max-w-xl mx-auto mb-4">
                     <p className="text-muted-foreground text-center mb-4">
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex flex-wrap gap-4 justify-center">
-                    <Button className="uppercase text-sm font-medium">
+                    <Button className="uppercase text-sm font-medium bg-orange-600">
                         Let&apos;s Work Together
                     </Button>
                     <Button variant="outline" className="uppercase text-sm font-medium">
@@ -60,29 +60,29 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">My Expertise</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="p-6 border rounded-lg">
-                            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                <Award className="h-6 w-6 text-primary" />
+                            <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                                <Award className="h-6 w-6 text-orange-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Brand Identity</h3>
                             <p className="text-muted-foreground">Creating cohesive visual identities that express your brand&apos;s unique personality and values.</p>
                         </div>
                         <div className="p-6 border rounded-lg">
-                            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                <Users className="h-6 w-6 text-primary" />
+                            <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                                <Users className="h-6 w-6 text-orange-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
                             <p className="text-muted-foreground">Designing intuitive, user-centered digital experiences that prioritize functionality and aesthetics.</p>
                         </div>
                         <div className="p-6 border rounded-lg">
-                            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                <Globe className="h-6 w-6 text-primary" />
+                            <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                                <Globe className="h-6 w-6 text-orange-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Digital Design</h3>
                             <p className="text-muted-foreground">Creating engaging visuals for websites, social media, and digital marketing campaigns.</p>
                         </div>
                         <div className="p-6 border rounded-lg">
-                            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                <Heart className="h-6 w-6 text-primary" />
+                            <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                                <Heart className="h-6 w-6 text-orange-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Print Design</h3>
                             <p className="text-muted-foreground">Crafting impactful print materials from packaging to publications with attention to detail.</p>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="order-2 md:order-1 relative z-10">
                                     <div className="p-6 bg-card border rounded-lg">
-                                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">Step 1</span>
+                                        <span className="inline-block px-3 py-1 bg-orange-600/10 text-orange-600 rounded-full text-sm font-medium mb-4">Step 1</span>
                                         <h3 className="text-xl font-semibold mb-2">Discovery</h3>
                                         <p className="text-muted-foreground">I start by understanding your business goals, target audience, and project requirements through in-depth research and conversations.</p>
                                     </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="order-2 relative z-10">
                                     <div className="p-6 bg-card border rounded-lg">
-                                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">Step 2</span>
+                                        <span className="inline-block px-3 py-1 bg-orange-600/10 text-orange-600 rounded-full text-sm font-medium mb-4">Step 2</span>
                                         <h3 className="text-xl font-semibold mb-2">Strategy</h3>
                                         <p className="text-muted-foreground">Developing a creative strategy that aligns with your objectives and sets the foundation for the design direction.</p>
                                     </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="order-2 md:order-1 relative z-10">
                                     <div className="p-6 bg-card border rounded-lg">
-                                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">Step 3</span>
+                                        <span className="inline-block px-3 py-1 bg-orange-600/10 text-orange-600 rounded-full text-sm font-medium mb-4">Step 3</span>
                                         <h3 className="text-xl font-semibold mb-2">Creation</h3>
                                         <p className="text-muted-foreground">Translating concepts into visual solutions through iterative design exploration and development.</p>
                                     </div>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="order-2 relative z-10">
                                     <div className="p-6 bg-card border rounded-lg">
-                                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">Step 4</span>
+                                        <span className="inline-block px-3 py-1 bg-orange-600/10 text-orange-600 rounded-full text-sm font-medium mb-4">Step 4</span>
                                         <h3 className="text-xl font-semibold mb-2">Refinement</h3>
                                         <p className="text-muted-foreground">Perfecting the design through feedback, revisions, and attention to the smallest details.</p>
                                     </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="order-2 md:order-1 relative z-10">
                                     <div className="p-6 bg-card border rounded-lg">
-                                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">Step 5</span>
+                                        <span className="inline-block px-3 py-1 bg-orange-600/10 text-orange-600 rounded-full text-sm font-medium mb-4">Step 5</span>
                                         <h3 className="text-xl font-semibold mb-2">Delivery</h3>
                                         <p className="text-muted-foreground">Providing final assets in all necessary formats with clear implementation guidelines for optimal results.</p>
                                     </div>

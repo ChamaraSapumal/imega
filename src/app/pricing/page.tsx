@@ -82,11 +82,11 @@ export default function PricingPage() {
                 {pricingPlans.map((plan) => (
                     <Card
                         key={plan.name}
-                        className={`flex flex-col h-full ${plan.popular ? "border-primary shadow-md relative" : ""
+                        className={`flex flex-col h-full ${plan.popular ? "border-orange-600 shadow-md relative" : ""
                             }`}
                     >
                         {plan.popular && (
-                            <Badge className="absolute -top-2 right-6 px-3 py-1">
+                            <Badge className="absolute -top-2 right-6 px-3 py-1 bg-orange-600">
                                 Most Popular
                             </Badge>
                         )}
@@ -102,7 +102,7 @@ export default function PricingPage() {
                             <ul className="space-y-3">
                                 {plan.features.map((feature) => (
                                     <li key={feature} className="flex items-start">
-                                        <Check className="h-5 w-5 text-primary shrink-0 mr-3 mt-0.5" />
+                                        <Check className="h-5 w-5 text-orange-600 shrink-0 mr-3 mt-0.5" />
                                         <span>{feature}</span>
                                     </li>
                                 ))}
@@ -110,7 +110,7 @@ export default function PricingPage() {
                         </CardContent>
                         <CardFooter>
                             <Button
-                                className={`w-full ${plan.popular ? "" : "variant-outline"}`}
+                                className={`w-full ${plan.popular ? "" : "variant-outline"} bg-orange-600`}
                                 variant={plan.popular ? "default" : "outline"}
                             >
                                 {plan.cta}
@@ -128,7 +128,7 @@ export default function PricingPage() {
                 </p>
                 <div className="flex justify-center">
                     <Link href="/contact">
-                        <Button size="lg">Contact Us</Button>
+                        <Button size="lg" className="bg-orange-600">Contact Us</Button>
                     </Link>
                 </div>
             </div>

@@ -20,23 +20,23 @@ export default function ContactPage() {
 
                 <div className="grid md:grid-cols-3 gap-8 mb-12">
                     <div className="flex flex-col items-center text-center p-4">
-                        <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                            <Mail className="h-6 w-6 text-primary" />
+                        <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                            <Mail className="h-6 w-6 text-orange-600" />
                         </div>
                         <h2 className="text-lg font-medium mb-2">Email</h2>
                         <p className="text-muted-foreground">hello@designstudio.com</p>
                     </div>
                     <div className="flex flex-col items-center text-center p-4">
-                        <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                            <MapPin className="h-6 w-6 text-primary" />
+                        <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                            <MapPin className="h-6 w-6 text-orange-600" />
                         </div>
                         <h2 className="text-lg font-medium mb-2">Location</h2>
                         <p className="text-muted-foreground">San Francisco, CA</p>
                     </div>
 
                     <div className="flex flex-col items-center text-center p-4">
-                        <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                            <Clock className="h-6 w-6 text-primary" />
+                        <div className="h-12 w-12 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                            <Clock className="h-6 w-6 text-orange-600" />
                         </div>
                         <h2 className="text-lg font-medium mb-2">Working Hours</h2>
                         <p className="text-muted-foreground">Mon - Fri: 9:00 AM - 6:00 PM</p>

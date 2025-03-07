@@ -28,7 +28,7 @@ const NavBar = () => {
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-16 items-center justify-between px-4 md:px-6">
                 <Link href="/" className="flex items-center space-x-2">
-                    <span className="font-bold text-xl">Imega<span className="text-primary">Infinity</span></span>
+                    <span className="font-bold text-xl">Imega<span className="text-orange-600">Infinity</span></span>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -38,8 +38,8 @@ const NavBar = () => {
                             key={route.href}
                             href={route.href}
                             className={cn(
-                                "transition-colors hover:text-primary text-foreground/60 relative py-2",
-                                pathname === route.href && "text-foreground after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
+                                "transition-colors hover:text-orange-600 text-foreground/60 relative py-2",
+                                pathname === route.href && "text-foreground after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-orange-600"
                             )}
                         >
                             {route.label}
@@ -51,7 +51,7 @@ const NavBar = () => {
                 <div className="hidden md:flex items-center space-x-4">
                     <ThemeSwitcher />
                     <Link href="/contact">
-                        <Button className="px-6">Let&apos;s Talk</Button>
+                        <Button className="px-6 bg-orange-600">Let&apos;s Talk</Button>
                     </Link>
                 </div>
 
@@ -68,7 +68,7 @@ const NavBar = () => {
                             {/* Header with close button */}
                             <div className="flex items-center justify-between p-4 border-b">
                                 <Link href="/" className="flex items-center space-x-2">
-                                    <span className="font-bold text-xl">Design<span className="text-primary">Studio</span></span>
+                                    <span className="font-bold text-xl">Design<span className="text-orange-600">Studio</span></span>
                                 </Link>
                                 <SheetClose asChild>
                                     <Button variant="ghost" size="icon">
@@ -85,8 +85,8 @@ const NavBar = () => {
                                             <Link
                                                 href={route.href}
                                                 className={cn(
-                                                    "text-foreground/70 hover:text-primary hover:bg-muted transition-colors rounded-md p-3 text-lg",
-                                                    pathname === route.href && "bg-primary/10 text-primary font-medium"
+                                                    "text-foreground/70 hover:text-orange-600 hover:bg-muted transition-colors rounded-md p-3 text-lg",
+                                                    pathname === route.href && "bg-primary/10 text-orange-600 font-medium"
                                                 )}
                                             >
                                                 {route.label}
@@ -105,7 +105,7 @@ const NavBar = () => {
                                     </div>
                                     <SheetClose asChild>
                                         <Link href="/contact" className="w-full">
-                                            <Button size="lg" className="w-full">Let&apos;s Talk</Button>
+                                            <Button size="lg" className="w-full bg-orange-600">Let&apos;s Talk</Button>
                                         </Link>
                                     </SheetClose>
                                 </div>

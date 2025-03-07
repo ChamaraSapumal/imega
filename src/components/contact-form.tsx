@@ -61,7 +61,7 @@ const ContactForm = () => {
                 </div>
             </CardContent>
             <CardFooter>
-                <Button className="w-full">Send Message</Button>
+                <Button className="w-full bg-orange-600">Send Message</Button>
             </CardFooter>
         </Card>
     );
